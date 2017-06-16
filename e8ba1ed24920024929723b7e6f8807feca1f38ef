@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9aa7fdbe_4117d4ed",
+        "filename": "rubygem-cool.io.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 80
+      },
+      "writtenOn": "2017-06-16T18:00:20Z",
+      "side": 1,
+      "message": "should be rubygem(rspec) \u003e\u003d 3.5.0",
+      "revId": "e8ba1ed24920024929723b7e6f8807feca1f38ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
