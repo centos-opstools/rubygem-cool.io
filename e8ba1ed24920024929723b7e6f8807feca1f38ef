@@ -16,6 +16,24 @@
       "revId": "e8ba1ed24920024929723b7e6f8807feca1f38ef",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9aa7fdbe_24c49e3f",
+        "filename": "rubygem-cool.io.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 390
+      },
+      "writtenOn": "2017-06-20T06:27:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9aa7fdbe_4117d4ed",
+      "revId": "e8ba1ed24920024929723b7e6f8807feca1f38ef",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
