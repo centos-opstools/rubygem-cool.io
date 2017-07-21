@@ -3,8 +3,8 @@
 %global optflags -O2 -g -fno-strict-aliasing
 
 Name: rubygem-%{gem_name}
-Version: 1.4.5
-Release: 2%{?dist}
+Version: 1.5.0
+Release: 1%{?dist}
 Summary: A cool framework for doing high performance I/O in Ruby
 License: MIT
 URL: http://coolio.github.com
@@ -82,6 +82,8 @@ popd
 %doc %{gem_instdir}/README.md
 %doc %{gem_instdir}/Gemfile
 %{gem_instdir}/appveyor.yml
+%{gem_instdir}/libev_ruby_gil.diff
+%{gem_instdir}/libev_win_select.diff
 
 %files doc
 %doc %{gem_docdir}
@@ -91,6 +93,9 @@ popd
 %{gem_instdir}/examples
 
 %changelog
+* Thu Jun 29 2017 Rich Megginson <rmeggins@redhat.com> - 1.5.0-1
+- Update to 1.5.0
+
 * Thu Jan 19 2017 Sandro Bonazzola <sbonazzo@redhat.com> - 1.4.5-2
 - Rebuilding adding ppc64le arch
 
