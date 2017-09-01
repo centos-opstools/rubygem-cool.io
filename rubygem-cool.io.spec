@@ -3,7 +3,7 @@
 %global optflags -O2 -g -fno-strict-aliasing
 
 Name: rubygem-%{gem_name}
-Version: 1.5.0
+Version: 1.5.1
 Release: 1%{?dist}
 Summary: A cool framework for doing high performance I/O in Ruby
 License: MIT
@@ -93,6 +93,9 @@ popd
 %{gem_instdir}/examples
 
 %changelog
+* Thu Aug 17 2017 Richard Megginson <rmeggins@localhost.localdomain> - 1.5.1-1
+- Update to 1.5.1
+
 * Thu Jun 29 2017 Rich Megginson <rmeggins@redhat.com> - 1.5.0-1
 - Update to 1.5.0
 
