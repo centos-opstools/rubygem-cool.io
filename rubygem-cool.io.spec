@@ -1,9 +1,9 @@
-# Generated from cool.io-1.2.4.gem by gem2rpm -*- rpm-spec -*-
+# Generated from cool.io-1.5.3.gem by gem2rpm -*- rpm-spec -*-
 %global gem_name cool.io
-%global optflags -O2 -g -fno-strict-aliasing
+%global debug_package %{nil}
 
 Name: rubygem-%{gem_name}
-Version: 1.5.1
+Version: 1.5.3
 Release: 1%{?dist}
 Summary: A cool framework for doing high performance I/O in Ruby
 License: MIT
@@ -13,7 +13,20 @@ BuildRequires: ruby(release)
 BuildRequires: rubygems-devel
 BuildRequires: ruby-devel
 BuildRequires: rubygem(rspec) >= 3.5.0
+%if 0%{?rhel}
 Provides: rubygem(%{gem_name}) = %{version}
+%endif
+
+%if 0%{?fedora}
+# Compiler is required for build of gem binary extension.
+# https://fedoraproject.org/wiki/Packaging:C_and_C++#BuildRequires_and_Requires
+BuildRequires: gcc
+# BuildRequires: rubygem(rake-compiler) >= 1.0
+# BuildRequires: rubygem(rake-compiler) < 2
+# BuildRequires: rubygem(rake-compiler-dock) >= 0.6.0
+# BuildRequires: rubygem(rake-compiler-dock) < 0.7
+# BuildRequires: rubygem(rspec) >= 2.13.0
+%endif
 
 %description
 Cool.io provides a high performance event framework for Ruby which uses the
@@ -22,7 +35,6 @@ libev C library.
 
 %package doc
 Summary: Documentation for %{name}
-Group: Documentation
 Requires: %{name} = %{version}-%{release}
 BuildArch: noarch
 
@@ -93,6 +105,9 @@ popd
 %{gem_instdir}/examples
 
 %changelog
+* Thu Nov 23 2017 Sandro Bonazzola <sbonazzo@redhat.com> - 1.5.3-1
+- Update to 1.5.3
+
 * Thu Aug 17 2017 Richard Megginson <rmeggins@localhost.localdomain> - 1.5.1-1
 - Update to 1.5.1
 
