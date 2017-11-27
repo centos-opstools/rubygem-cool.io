@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_dcc3ad36",
+        "filename": "rubygem-cool.io.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 326
+      },
+      "writtenOn": "2017-11-27T18:35:47Z",
+      "side": 1,
+      "message": "Is it necessary to use gem2rpm to update an existing spec?  Why not just update the spec directly?",
+      "revId": "956eb323988d60ece97f6168e90e90a4825d954f",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
